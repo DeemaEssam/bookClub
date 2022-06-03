@@ -18,7 +18,7 @@ bookClub::bookClub(string clubName){
 }
 
 bookClub::~bookClub(){
-  cout << "-------------------------Deleting Dynamic Object---------------------------" << endl;
+  cout << "-----------------------------Deleting Dynamic Object--------------------------------" << endl;
   for (int i=0; i<numTaken; ++i)
       delete collecTaken[i];
 }
@@ -79,22 +79,26 @@ void bookClub::addTaken(int memId, string bookName){
           numTaken++;
 
           cout << endl;
-          cout << "you are added in Effat University book club!!" << endl;
+          cout << "Taken book added seccfully!!" << endl;
         }
       }
 }
 
 void bookClub::printclubMemberes(){
 
-  cout << endl;
-  cout << "-------------------Members list at the club--------------------" << endl;
+  cout<<endl;
+  cout<<"--------------------------------------------"<<endl;
+  cout<<"         Members list at the club           "<<endl;
+  cout<<"--------------------------------------------"<<endl;
   collectionOfMembers.print();
 }
 
 void bookClub::printBooks(){
 
   cout << endl;
-  cout << "---------------------------Books list--------------------------" <<endl;
+  cout << "--------------------------------------------------------------------" <<endl;
+  cout << "                              Books list                            " <<endl;
+  cout << "--------------------------------------------------------------------" <<endl;
   collectionOfBooks.print();
 }
 
@@ -110,20 +114,25 @@ void bookClub::printTaken(){
     const int columnWidth = 8;
 
     cout << endl;
-    cout << "--------------------------Taken list---------------------" << endl<<endl;
+    cout << "--------------------------------------------------------------------------------------------------------------------" << endl;
+    cout << "                                                 Taken list                       " << endl;
+    cout << "--------------------------------------------------------------------------------------------------------------------" <<endl;
     cout << left << setw(columnWidth*2) << setfill(separator) << "memberID";
     cout << left << setw(columnWidth*2) << setfill(separator) << "firstName";
-    cout << left << setw(columnWidth*2) << setfill(separator) << "lsstName";
+    cout << left << setw(columnWidth*2) << setfill(separator) << "lastName";
+    cout << left << setw(columnWidth*2) << setfill(separator) << "bookID";
     cout << left << setw(columnWidth*2) << setfill(separator) << "bookTitle";
+    cout << left << setw(columnWidth*2) << setfill(separator) << "bookAuthor";
+    cout << left << setw(columnWidth*2) << setfill(separator) << "Publish year";
     cout << endl;
-    cout << "---------------------------------------------------------" << endl;
+    cout << "--------------------------------------------------------------------------------------------------------------------" << endl;
 
     for (int i=0; i < numTaken; ++i){
 
       collecTaken[i]->print();
       cout << endl;
     }
-    cout << "---------------------------------------------------------" << endl;
+    cout << "--------------------------------------------------------------------------------------------------------------------" << endl;
     }
 }
 
@@ -143,15 +152,17 @@ void bookClub::printTakenByMember(int memId){
 
     if(collectionOfMembers.find(memId, &memID))
     {
-    cout<<"-------------------------------------------books taken by '"<<memId<<"'----------------------------------------"<<endl<<endl;
+    cout<<"--------------------------------------------------------------------------------------------------------------------"<<endl;
+    cout<<"                                               books taken by '"<<memId<<"'                                  "<<endl;
+    cout<<"--------------------------------------------------------------------------------------------------------------------"<<endl;
     cout << left << setw(columnWidth*2) << setfill(separator) << "memberID";
     cout << left << setw(columnWidth*2) << setfill(separator) << "firstName";
-    cout << left << setw(columnWidth*2) << setfill(separator) << "lsstName";
+    cout << left << setw(columnWidth*2) << setfill(separator) << "lastName";
     cout << left << setw(columnWidth*2) << setfill(separator) << "bookID";
-    cout << left << setw(columnWidth*2) << setfill(separator) << "bookTitle";
+    cout << left << setw(columnWidth*3) << setfill(separator) << "bookTitle";
     cout << left << setw(columnWidth*2) << setfill(separator) << "bookAuthor";
     cout << left << setw(columnWidth*2) << setfill(separator) << "Publish year"<<endl;
-    cout<<"------------------------------------------------------------------------------------------------------------"<<endl;
+    cout<<"--------------------------------------------------------------------------------------------------------------------"<<endl;
     cout << endl;
 
     for (int i = 0; i < numTaken; ++i)
@@ -163,8 +174,6 @@ void bookClub::printTakenByMember(int memId){
           cout << left << setw(columnWidth*2) << setfill(separator) << collecTaken[i]->getclubMember()->getlastName();
           collecTaken[i]->getBook()->print();
           cout<<endl;
-          cout<<"------------------------------------------------------------------------------------------------------------"<<endl;
-          cout <<endl << endl;
         }
       }
     }
