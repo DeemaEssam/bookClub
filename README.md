@@ -6,6 +6,8 @@ Members will be given the option of viewing the data, add taken book and view bo
 
 
 
+
+
 # List of Files
 ************************
 # Header Files
@@ -32,6 +34,8 @@ Members will be given the option of viewing the data, add taken book and view bo
 * View.cc
 
 
+
+
 # Launching and Operating Instructions
 **********************************************************************************************************************************
 When executing the code these choices will be appear:
@@ -48,6 +52,8 @@ When executing the code these choices will be appear:
 
 (0)Exit                        - will stop running the prorgram
 **********************************************************************************************************************************
+
+
 
 # Execution:
 **********************************************************************************************************************************
