@@ -19,8 +19,8 @@ public:
   Book(int, string, string, int); //constructor
   int getbookID(); //getter id
   string getbookTitle();
-  int getbookYear();
   string getbookAuthor();
+  int getbookYear();
   bool lessThan(Book*);
   void print();
 };
