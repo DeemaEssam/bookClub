@@ -25,14 +25,23 @@ Book::Book(int book_id , string book_title, string book_author, int book_year){
 int Book::getbookID(){
 
   return bookID;
-
 } //getter id
 
 
 string Book::getbookTitle(){
 
   return bookTitle;
+}
 
+int Book::getbookYear(){
+
+  return bookYear;
+}
+
+
+string Book::getbookAuthor(){
+
+  return bookAuthor;
 }
 
 
@@ -89,7 +98,7 @@ void Book::print(){
   const int columnWidth = 8;
 
   cout << left << setw(columnWidth*2) << setfill(separator) << bookID;
-  cout << left << setw(columnWidth*2) << setfill(separator) << this->getbookTitle();
+  cout << left << setw(columnWidth*3) << setfill(separator) << this->getbookTitle();
   cout << left << setw(columnWidth*2) << setfill(separator) << bookAuthor;
   cout << left << setw(columnWidth*2) << setfill(separator) << bookYear;
 
