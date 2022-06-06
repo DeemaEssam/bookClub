@@ -51,7 +51,6 @@ When executing the code these choices will be appear:
 (5) Add book taken by member   - will allow user to add 'book taken by member'   (input(memberID, bookTitle))
 
 (0)Exit                        - will stop running the prorgram
-**********************************************************************************************************************************
 
 
 
@@ -59,6 +58,7 @@ When executing the code these choices will be appear:
 **********************************************************************************************************************************
 ![1](https://user-images.githubusercontent.com/106381596/171963612-a9f90c69-1b77-4a19-b4f9-d01fa6998b86.png)
 ![2](https://user-images.githubusercontent.com/106381596/171963616-d7274a73-2830-4d95-9a00-453e498b9e27.png)
-![3,4](https://user-images.githubusercontent.com/106381596/171963627-4ce7b581-ab61-4b4d-8584-54fb54c375ab.png)
-![5,1](https://user-images.githubusercontent.com/106381596/171963654-a8511f59-f6aa-4ee3-baa8-acaee7de0025.png)
-![5,2](https://user-images.githubusercontent.com/106381596/171963662-ab1f40ed-fe6c-4c58-92b7-433844d89247.png)
+![3,4](https://user-images.githubusercontent.com/106381596/172243103-2641f96e-758a-48f4-b4c3-725f98df8165.png)
+![5,1](https://user-images.githubusercontent.com/106381596/172243115-a81dba22-1a0f-4ce3-8a1a-6dcc284aa8c4.png)
+![5,2](https://user-images.githubusercontent.com/106381596/172243122-aec31667-40ec-496a-8d3a-6ffe9ace773b.png)
+
