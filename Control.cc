@@ -52,6 +52,7 @@ void Control::launch()
       view.readInt(memId);
 
       BookClub->printTakenByMember(memId);
+      cout<<"--------------------------------------------------------------------------------------------------------------------"<<endl;
     }
 
     if (choice == 5)//add taken book
@@ -77,8 +78,8 @@ void Control::initclubMembers(bookClub *bclub)
    cout << "---------------------------Initializing the members data-------------------------" << endl;
 
   bclub->addMembers(new clubMember(20106517, "Deema", "Hamidah"));
-  bclub->addMembers(new clubMember(20106527, "Hanadi", "Alsiegh"));
-  bclub->addMembers(new clubMember(20105421, "Raghad", "Abdullah"));
+  bclub->addMembers(new clubMember(20106527, "Rehad", "Alshehri"));
+  bclub->addMembers(new clubMember(20105421, "Lamar", "Abdullah"));
   bclub->addMembers(new clubMember(20108282, "Danah", "Hamidah"));
   bclub->addMembers(new clubMember(20102345, "Reema", "Ahmad"));
   bclub->addMembers(new clubMember(20109752, "Layal", "Aljabri"));
