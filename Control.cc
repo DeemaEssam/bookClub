@@ -57,8 +57,6 @@ void Control::launch()
 
     if (choice == 5)//add taken book
     {
-      cout << endl;
-      cout << "Please enter your data to register: " << endl;
       //getting the new information from the user
       cout << endl;
       view.printStr("Please insert member's id: ");
