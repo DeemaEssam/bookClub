@@ -57,7 +57,7 @@ void bookClub::addTaken(int memId, string bookName){
       if(!idMem1)
       {
         cout << endl;
-        cout << "Member is not found!" << endl;
+        cout<<"---------------Member is not FOUND!!-------------" <<endl;
 
         return;
       }
@@ -65,7 +65,7 @@ void bookClub::addTaken(int memId, string bookName){
       else if(!book1){
 
         cout << endl;
-        cout << "Book is not found!" << endl;
+        cout<<"---------------Book is not FOUND!!-------------" <<endl;
 
         return;
       }
@@ -79,7 +79,7 @@ void bookClub::addTaken(int memId, string bookName){
           numTaken++;
 
           cout << endl;
-          cout << "Taken book added seccfully!!" << endl;
+          cout<<"-----------Taken book added seccfully!!--------" << endl;
         }
       }
 }
@@ -141,7 +141,7 @@ void bookClub::printTakenByMember(int memId){
   if(numTaken==0)
   {
     cout << endl;
-    cout<<"No member be added"<<endl;
+    cout<<"------------------ member is not added yet-------------"<<endl;
   }
   else{
     clubMember *memID = nullptr;
@@ -179,11 +179,8 @@ void bookClub::printTakenByMember(int memId){
 
       else
       {
-
         cout << endl;
-
-        cout<<"--------------------------Member is not FOUND!!------------------------" <<endl;
-
+        cout<<"---------------Member is not FOUND!!-------------" <<endl;
         return;
       }
   }
