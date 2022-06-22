@@ -52,7 +52,6 @@ void Control::launch()
       view.readInt(memId);
 
       BookClub->printTakenByMember(memId);
-      cout<<"--------------------------------------------------------------------------------------------------------------------"<<endl;
     }
 
     if (choice == 5)//add taken book
